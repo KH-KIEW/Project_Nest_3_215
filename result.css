@@ -1,0 +1,72 @@
+p {
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  font-weight: 20px;
+}
+.body {
+  background-image: url("/static/Assets/Images/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: block;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background-color: rgb(196, 183, 183);
+  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+#h1 {
+  text-align: center;
+  color: rgb(231, 18, 18);
+}
+.result p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #2f002c;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.result {
+  text-align: center;
+  color: rgb(163, 58, 31);
+}
+.result form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #2f002c;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+.result a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 24px 0;
+}
+
+.res {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+.btn {
+  padding: 7px;
+  font-weight: 900;
+  background-color: rgba(29, 76, 146, 0.863);
+}

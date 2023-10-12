@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/result.css" />
+    <title>Fake News Detection Result</title>
+
+    <!-- Add your CSS styles if needed -->
+  </head>
+  <body class="body">
+    <div class="main">
+      <header>
+        <h1 id="h1">Fake News Detection Result</h1>
+      </header>
+      <main class="result">
+        <div>
+          <p>The provided news is</p>
+          {% if result %}
+             <p class="res"><span id="result">
+              
+              Prediction : {{ result }}</strong></p>
+          {% endif %}
+          <script>
+            function growTextarea(i, elem) {
+              var elem = $(elem);
+              var resizeTextarea = function (elem) {
+                var scrollLeft =
+                  window.pageXOffset ||
+                  (
+                    document.documentElement ||
+                    document.body.parentNode ||
+                    document.body
+                  ).scrollLeft;
+                var scrollTop =
+                  window.pageYOffset ||
+                  (
+                    document.documentElement ||
+                    document.body.parentNode ||
+                    document.body
+                  ).scrollTop;
+                elem.css("height", "auto").css("height", elem.prop("scrollHeight"));
+                window.scrollTo(scrollLeft, scrollTop);
+              };
+              elem.on("input", function () {
+                resizeTextarea($(this));
+              });
+              resizeTextarea($(elem));
+            }
+      
+            $(".jTextarea").each(growTextarea);
+          </script>
+          
+        </div>
+        <div>
+          <a href="/"
+            ><button class="btn">Back to Home</button></a
+          >
+        </div>
+      </main>
+    </div>
+    
+    
+    <!-- Add any additional HTML elements or styling as needed -->
+  </body>
+</html>
